@@ -9,7 +9,7 @@ const handler = async (m, {conn, text, command}) => {
   const tradutor = _translate.BK9.BK9;
 
   if (command === 'bk9dalle') {
-    if (!text) throw `${tradutor.bk9dalletext}`;
+    if (!text) throw `${tradutor.نايت2}`;
 
     await conn.sendMessage(m.chat, {text: tradutor.bk9dallewait}, {quoted: m});
 
@@ -24,7 +24,7 @@ const handler = async (m, {conn, text, command}) => {
     } catch (error) {
       throw `${tradutor.bk9dalleerr}`;
     }
-  } else if (command === 'bk9') {
+  } else if (command === 'نايت') {
     if (!text) throw `${tradutor.bk9text}`;
 
     try {
@@ -41,7 +41,7 @@ const handler = async (m, {conn, text, command}) => {
     } catch (error) {
       throw `${tradutor.bk9err}`;
     }
-  } else if (command === 'bk9img') {
+  } else if (command === 'نايت3') {
     let BK7 = m.quoted ? m.quoted : m;
     let BK8 = (BK7.msg || BK7).mimetype || BK7.mediaType || '';
     if (/image/g.test(BK8) && !/webp/g.test(BK8)) {
@@ -55,6 +55,6 @@ const handler = async (m, {conn, text, command}) => {
   }
 };
 
-handler.command = ['bk9dalle', 'bk9', 'bk9img'];
+handler.command = ['bk9dalle', 'bk9', 'bk9img','نايت2','نايت3','نايت'];
 handler.tags = ['ai'];
 export default handler;
