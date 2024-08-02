@@ -13,7 +13,11 @@ handler.all = async function (m) {
     conn.sendPresenceUpdate( 'recording' , m.chat);
     conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:  'audio/mpeg' , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
   }
-
+ if (/^🙂|انصدمت$/i.test(m.text)) {
+    let vn =  'https://files.catbox.moe/bqtufo.mp3' ;
+    conn.sendPresenceUpdate( 'recording' , m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:  'audio/mpeg' , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
+ }
   if (/^سبحانه$/i.test(m.text)) {
     let vn =  'https://qu.ax/nGFt.mp3' ;
     conn.sendPresenceUpdate( 'recording' , m.chat);
