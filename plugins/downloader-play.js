@@ -134,7 +134,7 @@ const handler = async (m, { conn, command, args, text, usedPrefix }) => {
   }
 };
 
-handler.command = /^(play|play2)$/i;
+handler.command = /^(play|play2|شغل)$/i;
 export default handler;
 
 
