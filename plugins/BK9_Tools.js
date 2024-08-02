@@ -29,6 +29,6 @@ let handler = async function (m, { text }) {
   }
 };
 
-handler.command = ['bk9short'];
+handler.command = ['bk9short','نايت4'];
 handler.tags = ['tools'];
 export default handler;
