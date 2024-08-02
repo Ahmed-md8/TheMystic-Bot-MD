@@ -156,7 +156,5 @@ body: {
                       title: 'قائمة جميع الاوامر',
                       description: '',
                       id: '.المهام'
-handler.help = ['قائمه'];
-handler.tags =['قائمه'];
-handler.command /^(قائمه)$/i;
+handler.command = ['قائمه', 'قائمه2'];
 export default handler;
