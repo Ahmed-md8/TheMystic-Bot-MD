@@ -1,7 +1,7 @@
 import * as googleTTS from '@sefinek/google-tts-api'
 import {readFileSync, unlinkSync} from 'fs';
 import {join} from 'path';
-const defaultLang = 'es';
+const defaultLang = 'ar';
 
 const handler = async (m, {conn, args, usedPrefix, command}) => {
   const datas = global
@@ -36,7 +36,7 @@ handler.tags = ['tools'];
 handler.command = /^g?tts$/i;
 export default handler;
 
-function tts(text, lang = 'es') {
+function tts(text, lang = 'ar') {
   return new Promise((resolve, reject) => {
     try {
       const tts = gtts(lang);
