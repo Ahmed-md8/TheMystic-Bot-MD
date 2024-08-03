@@ -138,6 +138,6 @@ const handler = async (m, { conn, text, usedPrefix: prefijo }) => {
 
 handler.help = [ صورة_زر ];
 handler.tags = [ اختبار ];
-handler.command = /^(صورة_زر)$/i;
+handler.command = /^(قائمه)$/i;
 
 export default handler;
