@@ -59,6 +59,11 @@ handler.all = async function (m) {
     conn.sendPresenceUpdate(  'recording'  , m.chat);
     conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:   'audio/mpeg'  , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
   }
+if (/^منور$/i.test(m.text)) {
+    let vn =     'https://files.catbox.moe/1auhni.webm'    ;
+    conn.sendPresenceUpdate(    'recording'    , m.chat);
+    conn.sendMessage(m.chat, { audio: { url: vn }, ptt: true, mimetype:     'audio/mpeg'    , fileName: `shawaza_zizo_2024.opp` }, { quoted: m });
+}
   if (/^راب فشيخ$/i.test(m.text)) {
     let vn =    'https://qu.ax/MGGw'   ;
     conn.sendPresenceUpdate(   'recording'   , m.chat);
